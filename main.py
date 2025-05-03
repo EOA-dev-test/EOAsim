@@ -5,7 +5,7 @@ from io import BytesIO
 
 app = FastAPI()
 
-# CORS para permitir chamadas externas (ex: Lovable ou navegador local)
+# CORS para acesso externo
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
